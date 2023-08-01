@@ -13,9 +13,9 @@
 
 using namespace std;
 
-int vert = 10000; //вершины
-int conn = 10; //связи
-int dist = 10; //вес
+int vert = 10000; //ГўГҐГ°ГёГЁГ­Г»
+int conn = 10; //Г±ГўГїГ§ГЁ
+int dist = 10; //ГўГҐГ±
 
 class Graph
 {
@@ -161,7 +161,7 @@ vector<Graph> read_file(string file)
 		}
 	}
 	else {
-		cout << "ERROR , Не могу открывать файл" << endl;
+		cout << "ERROR , ГЌГҐ Г¬Г®ГЈГі Г®ГІГЄГ°Г»ГўГ ГІГј ГґГ Г©Г«" << endl;
 	}
 	return graphs;
 }
@@ -175,7 +175,7 @@ int main()
 	string out_file = "textGenerator.txt";
 	//Generator(vert, conn, dist, out_file);
 
-	string file = "input_transport_network_10000.csv";
+	string file = "input_transport_network.csv";
 	vector<Graph> graph = read_file(file);
 
 	//print(graph);
@@ -192,9 +192,9 @@ int main()
 
 		if (!visitBFS[vert])
 		{
-			cout << " Пути до стока нет, поток максимальный: ";
+			cout << " ГЏГіГІГЁ Г¤Г® Г±ГІГ®ГЄГ  Г­ГҐГІ, ГЇГ®ГІГ®ГЄ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г»Г©: ";
 			cout << maxflow;
-			break;//Если пути до стока нет, поток максимальный
+			break;//Г…Г±Г«ГЁ ГЇГіГІГЁ Г¤Г® Г±ГІГ®ГЄГ  Г­ГҐГІ, ГЇГ®ГІГ®ГЄ Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г»Г©
 		}
 		vector<bool> visitDFS(graph.size() + 1, false);
 
