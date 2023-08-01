@@ -49,7 +49,7 @@ namespace C_
 
         static void Main()
         {
-            string file = "C:\\Users\\mega-\\OneDrive\\Рабочий стол\\test (1).csv";
+            string file = ":\\LOCATION.csv";
             List<List<int>> matrix = new List<List<int>>();
             using (StreamReader reader = new StreamReader(file))
             {
