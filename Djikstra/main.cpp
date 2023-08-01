@@ -88,14 +88,6 @@ int main() {
         return 0;
     }
 
-    /*
-    for (int i = 0; i < matrix.size(); i++)
-    {
-        for (int j = 0 ; j < matrix[i].dist.size();j++)
-            cout << matrix[i].dist[j] << " ";
-        cout << endl;
-    }
-    */
     end = clock();
     seconds = (double)(end - start) / CLOCKS_PER_SEC;
     cout << "\nAlgorithm: " << seconds << "s";
