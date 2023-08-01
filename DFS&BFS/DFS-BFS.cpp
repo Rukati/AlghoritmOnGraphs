@@ -22,7 +22,7 @@ int main()
 	vector <int> select;
 	string str;
 	ifstream file;
-	string text = "input_graph (1).csv";
+	string text = "input_graph.csv";
 	file.open(text);
 	int chet = 0;
 	if (file.is_open()) {
@@ -86,21 +86,21 @@ int main()
 	vector<int>BFS;
 	vector<int>DFS;
 
-	//инициализация стека
+	//ГЁГ­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГї Г±ГІГҐГЄГ 
 	queue <int> q;
 	stack <int> s;
 
-	// список непосещенных вершины ( select )
+	// Г±ГЇГЁГ±Г®ГЄ Г­ГҐГЇГ®Г±ГҐГ№ГҐГ­Г­Г»Гµ ГўГҐГ°ГёГЁГ­Г» ( select )
 	select.resize(matrix.size() - 1);
 	iota(select.begin(), select.end(), 1);
 	// 
 
-	// рандом первой вершины
+	// Г°Г Г­Г¤Г®Г¬ ГЇГҐГ°ГўГ®Г© ГўГҐГ°ГёГЁГ­Г»
 	srand(time(NULL));
 	int v = 1;
 	if (find(select.begin(), select.end(), v) != select.end())
 	{
-		// удаление её из select'a
+		// ГіГ¤Г Г«ГҐГ­ГЁГҐ ГҐВё ГЁГ§ select'a
 		select.erase(find(select.begin(), select.end(), v));
 	}
 
@@ -136,7 +136,7 @@ int main()
 	//------------------------/BFS\------------------------\\
 
 
-	// список непосещенных вершины ( select )
+	// Г±ГЇГЁГ±Г®ГЄ Г­ГҐГЇГ®Г±ГҐГ№ГҐГ­Г­Г»Гµ ГўГҐГ°ГёГЁГ­Г» ( select )
 	select.clear();
 	select.resize(matrix.size() - 1);
 	iota(select.begin(), select.end(), 1);
@@ -145,7 +145,7 @@ int main()
 	v = 1;
 	if (find(select.begin(), select.end(), v) != select.end())
 	{
-		// удаление её из select'a
+		// ГіГ¤Г Г«ГҐГ­ГЁГҐ ГҐВё ГЁГ§ select'a
 		select.erase(find(select.begin(), select.end(), v));
 	}
 	s.push(v);
