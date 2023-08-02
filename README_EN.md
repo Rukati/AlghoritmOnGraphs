@@ -40,3 +40,9 @@ Dijkstra's algorithm computes the shortest path from a source vertex to all othe
 ## 7. Floyd-Warshall Algorithm
 The Floyd-Warshall algorithm calculates the shortest paths between all pairs of vertices in a weighted directed or undirected graph. It is capable of handling graphs with negative edge weights and is commonly used in all-pairs shortest path problems.
 
+# P.S. For Educational Purposes Only
+This code is intended solely for educational purposes. I am not a professional developer, and I do not encourage anyone to use this code as professional work.
+
+Thank you for visiting this repository!
+
+[Russian Version](./README.md)
