@@ -39,12 +39,13 @@ DFS — это алгоритм, который начинает обходит�
 
 ![Алгоритм Дейкстры](https://du-blog.ru/media/Dijkstra_Animation.gif)
 
-# 6. Алгоритм Флойда-Уоршелла
+# 7. Алгоритм Флойда-Уоршелла
 Алгоритм Флойда-Уоршелла — это алгоритм для нахождения кратчайших путей между всеми парами вершин во взвешенном ориентированном или неориентированном графе. Он может использоваться для нахождения кратчайших расстояний между всеми вершинами в графе, даже если граф содержит ребра с отрицательными весами.
 
 # P.s. Весь код сделан в обучающих целях
 Я не являюсь профессиональным разработчиком, данные программы сделаны в целях обучения, я никого не призываю использовать данный код как профессиональный.
 
+# ------------------------------------------------------------
 # Graphs and transport networks: Implementations of algorithms
 
 ## Description
@@ -86,7 +87,7 @@ Dijkstra's algorithm is an algorithm for finding the shortest path from one vert
 
 ![Dijkstra's algorithm](https://du-blog.ru/media/Dijkstra_Animation.gif)
 
-# 6. Floyd-Warshall algorithm
+# 7. Floyd-Warshall algorithm
 The Floyd-Warshall algorithm is an algorithm for finding the shortest paths between all pairs of vertices in a weighted directed or undirected graph. It can be used to find the shortest distances between all vertices in a graph, even if the graph contains edges with negative weights.
 
 # P.s. All code is for educational purposes.
